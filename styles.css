@@ -1,0 +1,221 @@
+.sacramento-regular {
+    font-family: "Sacramento", cursive;
+    font-size: 3.2em;
+}
+
+.sacramento-smaller {
+    font-family: "Sacramento", cursive;
+    font-size: 2em;
+}
+  
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25em;
+}
+.merriweather-sans-regular {
+    font-family: "Merriweather Sans";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font: 1.25em sans-serif;
+  }
+.merriweather-sans-light {
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: light;
+    font-size: 1.25em;
+  }
+
+.lightgreen {
+    color: #85DCBA;
+}
+
+.lightviolet {
+    color: #D9CCEA;
+}
+
+.darkgreen {
+    color: #0C272F;
+}
+
+.green{
+    color: #066D5F;
+
+}
+@media screen and (max-width: 1200px) {
+    body{
+        overflow: hidden;
+    }
+    #restContent {
+        display: none; /* Verstecke den Rest des Inhalts unterhalb von 1200 Pixeln */
+    }
+    .warning {
+        padding: 10px;
+        background-color: #066D5F;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed; /* Positionieren Sie das Element relativ zum Viewport */
+        top: 50%; /* Platziere das Element 50% von oben */
+        left: 50%; /* Platziere das Element 50% von links */
+        transform: translate(-50%, -50%); /* Zentriere das Element genau in der Mitte */
+    }
+}
+@media screen and (min-width: 1200px) {
+    .warning {
+        display: none; /* Verstecke das Element über 1200 Pixel */
+    }
+    
+}
+
+html {
+    overflow: hidden;
+    /* height: 100vh; */
+    /*font-weight: bold*/
+}
+
+body {
+    margin: 0;
+    overflow: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    background-color: #0C272F;
+    /* Vertikal Scrollen und Snap Points streng einhalten */
+}
+
+.section {
+    padding: 50px;
+    background-color: #0C272F;
+    height: 100vh; 
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+
+}
+
+/* navbar.css */
+.navbar{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.dot {
+    width: 10px; /* Breite der Punkte */
+    height: 10px; /* Höhe der Punkte */
+    border-radius: 50%; /* Kreisform */
+    background-color: #a4a4a4; /* Farbe der Punkte */
+    margin: 20px; /* Abstand zwischen den Punkten */
+  }
+
+.dot:hover {
+    /* Farbe des Punktes beim Hover */
+    background-color: #85DCBA; /* Hier die gewünschte Hover-Farbe einstellen */
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    }
+    
+.div1 { 
+    grid-area: 1 / 1 / 2 / 5; 
+}
+.div2 {
+    grid-area: 2 / 1 / 4 / 4;
+    display: flex;
+    justify-content: center;
+  }
+  
+.div3 {
+    grid-area: 2 / 4 / 4 / 7;
+    background-color: #066D5F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    max-height: 250px;
+    max-width: 550px;
+  }
+.div4 { grid-area: 4 / 1 / 6 / 4; }
+.div5 { grid-area: 4 / 4 / 6 / 7; }
+
+.zitat {
+    padding: 10px;
+}
+  
+.firstPicture {
+    max-width: 45%;
+    height: auto;
+}
+
+.bot{
+    max-width: 10%;
+    height: auto;
+}
+
+#section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.section2 {
+    max-width: 40%;
+    height: auto;
+    border-radius: 25px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+#section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+
+}
+.card{
+    height: 175px;
+    padding: 60px;
+    background-color: #066D5F;
+    color: #85DCBA;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px;
+}
+
+#section4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    font-size: 1.25em;
+}
+#einführung{
+    background-color: #066D5F;
+    padding: 3%;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bot {
+    position: absolute;
+    bottom: 25px; /* Abstand vom unteren Rand */
+    right: 25px; /* Abstand vom rechten Rand */
+    width: 50px; /* Breite des Fragezeichen-Bildes */
+    height: 50px; /* Höhe des Fragezeichen-Bildes */
+    background-size: cover; /* Skaliert das Bild, um den gesamten Bereich zu bedecken */
+}
