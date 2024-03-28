@@ -1,22 +1,12 @@
-document.getElementById('punkt-1')!.addEventListener('click', () => {
-    jumpToPage(1);
-});
-
-document.getElementById('punkt-2')!.addEventListener('click', () => {
-    jumpToPage(2);
-});
-
-document.getElementById('punkt-3')!.addEventListener('click', () => {
-    jumpToPage(3);
-});
-
-document.getElementById('punkt-4')!.addEventListener('click', () => {
-    jumpToPage(4);
-});
-
-document.getElementById('punkt-5')!.addEventListener('click', () => {
-    jumpToPage(5);
-});
+// Event-Listener für alle Punkte registrieren
+for (let i = 1; i <= 7; i++) {
+    const point = document.getElementById(`punkt-${i}`);
+    if (point) {
+        point.addEventListener('click', () => {
+            jumpToPage(i);
+        });
+    }
+}
 
 // Funktion zum Springen zu einer bestimmten Seite beim Klicken auf den Punkt
 function jumpToPage(pageIndex: number): void {
