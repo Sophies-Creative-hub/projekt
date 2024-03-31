@@ -192,8 +192,7 @@ body {
         grid-area: 2 / 1 / 4 / 4;
         display: flex;
         justify-content: center;
-      }
-      
+    }
     .div3 {
         grid-area: 2 / 4 / 4 / 7;
         background-color: #066D5F;
