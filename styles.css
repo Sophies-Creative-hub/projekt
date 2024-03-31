@@ -178,8 +178,6 @@ body {
         opacity: 0;
         animation: fade-in-animation 3s forwards;
     }
-      
-    
     .parent {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
