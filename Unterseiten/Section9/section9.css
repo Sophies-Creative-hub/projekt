@@ -1,0 +1,44 @@
+section{
+    padding-right: 30%;
+}
+#description{
+    padding-top: 5%;
+    padding-left: 5%;
+}
+#s9{
+    padding: 2%;
+    padding-left: 10%;
+    height: 550px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 25px; 
+    border-bottom-right-radius: 25px;
+    padding-right: 20%;
+    background-color: rgba(193, 200, 228, 0.75);
+    color: #0C272F;
+    font-weight: 500;
+    font-size: 18px;
+}
+h2{
+    padding: 5px;
+    color: #267267;
+}
+.custom-button {
+    position: absolute;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    bottom: 150px;
+    right: 0px;
+    width: 150px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+
+

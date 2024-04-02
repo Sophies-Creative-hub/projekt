@@ -1,55 +1,48 @@
-// Event-Listener für alle Punkte registrieren
-for (let i = 1; i <= 10; i++) {
-    const point = document.getElementById(`punkt-${i}`);
-    if (point) {
-        point.addEventListener('click', () => {
-            jumpToPage(i);
-        });
+function activateDot(dotId: string): void {
+    // Entferne die Klasse "active" von allen Listenelementen
+    const dots: NodeListOf<Element> = document.querySelectorAll('.dot');
+    dots.forEach(dot => {
+        dot.classList.remove('active');
+    });
+
+    // Füge die Klasse "active" zum angeklickten Listenelement hinzu
+    const clickedDot: HTMLElement | null = document.getElementById(dotId);
+    if (clickedDot) {
+        clickedDot.classList.add('active');
     }
 }
+function activateDotForCurrentSection(): void {
+    // Holen Sie sich alle Sektionen
+    const sections: NodeListOf<HTMLElement> = document.querySelectorAll('.section');
 
-// Event-Listener für das Scroll-Ereignis registrieren
-window.addEventListener('scroll', handleScroll);
+    // Überprüfen Sie, welche Sektion gerade sichtbar ist
+    sections.forEach(section => {
+        const bounding: DOMRect = section.getBoundingClientRect();
+        if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
+            // Die Sektion ist sichtbar, aktiviere den entsprechenden Punkt
+            const sectionId: string | null = section.id;
+            if (sectionId) {
+                const dotId: string = 'punkt-' + sectionId.substring('section'.length);
+                const dotElement: HTMLElement | null = document.getElementById(dotId);
+                if (dotElement) {
+                    // Entferne die Klasse "active" von allen Dots
+                    const dots: NodeListOf<Element> = document.querySelectorAll('.dot');
+                    dots.forEach(dot => {
+                        dot.classList.remove('active');
+                    });
 
-// Funktion zum Springen zu einer bestimmten Seite beim Klicken auf den Punkt
-function jumpToPage(pageIndex: number): void {
-    const pageElement = document.getElementById(`section${pageIndex}`);
-    if (pageElement) {
-        pageElement.scrollIntoView({ behavior: 'smooth' });
-        highlightPoint(pageIndex); // Highlight den entsprechenden Punkt im Menü
-    }
-}
-
-// Funktion zum Hervorheben des aktuellen Punkts im Menü
-function highlightPoint(pageIndex: number): void {
-    // Entfernen von "active", falls vorhanden, von allen Punkten
-    for (let i = 1; i <= 10; i++) {
-        const point = document.getElementById(`punkt-${i}`);
-        if (point) {
-            point.classList.remove('active');
-        }
-    }
-    // Hinzufügen von "active" zum aktuellen Punkt
-    const currentPagePoint = document.getElementById(`punkt-${pageIndex}`);
-    if (currentPagePoint) {
-        currentPagePoint.classList.add('active');
-    }
-}
-
-// Funktion zum Behandeln des Scroll-Ereignisses
-function handleScroll(): void {
-    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-    for (let i = 1; i <= 10; i++) {
-        const pageElement = document.getElementById(`section${i}`);
-        if (pageElement) {
-            const pageTop = pageElement.offsetTop;
-            const pageBottom = pageTop + pageElement.offsetHeight;
-
-            if (scrollPosition >= pageTop && scrollPosition < pageBottom) {
-                highlightPoint(i);
-                return; // Beenden der Funktion, sobald der aktuelle Punkt gefunden wurde
+                    // Füge die Klasse "active" zum entsprechenden Dot hinzu
+                    dotElement.classList.add('active');
+                }
             }
         }
-    }
+    });
 }
+
+// Rufen Sie die Funktion beim Laden der Seite auf
+window.onload = function() {
+    activateDotForCurrentSection();
+};
+
+// Fügen Sie ein Event-Listener für das Scroll-Ereignis hinzu, um die aktive Sektion zu aktualisieren
+window.addEventListener('scroll', activateDotForCurrentSection);

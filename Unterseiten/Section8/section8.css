@@ -1,0 +1,48 @@
+
+#section8{
+    font-size: 22px;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.carousel{
+    color: #85DCBA;
+    width: 100%;
+}
+.carousel-item .card {
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0;
+}
+.carousel-item {
+    transition: transform 1s ease-in-out; 
+}
+
+#beginn{
+    text-align: left;
+}
+.custom-button {
+    position: absolute;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    left: 0px;
+    width: 150px;
+    height: 50px;
+    bottom: 50px;  
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 150px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 500;
+}

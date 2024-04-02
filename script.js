@@ -1,52 +1,43 @@
-var _loop_1 = function (i) {
-    var point = document.getElementById("punkt-".concat(i));
-    if (point) {
-        point.addEventListener('click', function () {
-            jumpToPage(i);
-        });
-    }
-};
-// Event-Listener für alle Punkte registrieren
-for (var i = 1; i <= 10; i++) {
-    _loop_1(i);
-}
-// Event-Listener für das Scroll-Ereignis registrieren
-window.addEventListener('scroll', handleScroll);
-// Funktion zum Springen zu einer bestimmten Seite beim Klicken auf den Punkt
-function jumpToPage(pageIndex) {
-    var pageElement = document.getElementById("section".concat(pageIndex));
-    if (pageElement) {
-        pageElement.scrollIntoView({ behavior: 'smooth' });
-        highlightPoint(pageIndex); // Highlight den entsprechenden Punkt im Menü
+function activateDot(dotId) {
+    // Entferne die Klasse "active" von allen Listenelementen
+    var dots = document.querySelectorAll('.dot');
+    dots.forEach(function (dot) {
+        dot.classList.remove('active');
+    });
+    // Füge die Klasse "active" zum angeklickten Listenelement hinzu
+    var clickedDot = document.getElementById(dotId);
+    if (clickedDot) {
+        clickedDot.classList.add('active');
     }
 }
-// Funktion zum Hervorheben des aktuellen Punkts im Menü
-function highlightPoint(pageIndex) {
-    // Entfernen von "active", falls vorhanden, von allen Punkten
-    for (var i = 1; i <= 10; i++) {
-        var point = document.getElementById("punkt-".concat(i));
-        if (point) {
-            point.classList.remove('active');
-        }
-    }
-    // Hinzufügen von "active" zum aktuellen Punkt
-    var currentPagePoint = document.getElementById("punkt-".concat(pageIndex));
-    if (currentPagePoint) {
-        currentPagePoint.classList.add('active');
-    }
-}
-// Funktion zum Behandeln des Scroll-Ereignisses
-function handleScroll() {
-    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    for (var i = 1; i <= 10; i++) {
-        var pageElement = document.getElementById("section".concat(i));
-        if (pageElement) {
-            var pageTop = pageElement.offsetTop;
-            var pageBottom = pageTop + pageElement.offsetHeight;
-            if (scrollPosition >= pageTop && scrollPosition < pageBottom) {
-                highlightPoint(i);
-                return; // Beenden der Funktion, sobald der aktuelle Punkt gefunden wurde
+function activateDotForCurrentSection() {
+    // Holen Sie sich alle Sektionen
+    var sections = document.querySelectorAll('.section');
+    // Überprüfen Sie, welche Sektion gerade sichtbar ist
+    sections.forEach(function (section) {
+        var bounding = section.getBoundingClientRect();
+        if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
+            // Die Sektion ist sichtbar, aktiviere den entsprechenden Punkt
+            var sectionId = section.id;
+            if (sectionId) {
+                var dotId = 'punkt-' + sectionId.substring('section'.length);
+                var dotElement = document.getElementById(dotId);
+                if (dotElement) {
+                    // Entferne die Klasse "active" von allen Dots
+                    var dots = document.querySelectorAll('.dot');
+                    dots.forEach(function (dot) {
+                        dot.classList.remove('active');
+                    });
+                    // Füge die Klasse "active" zum entsprechenden Dot hinzu
+                    dotElement.classList.add('active');
+                }
             }
         }
-    }
+    });
 }
+// Rufen Sie die Funktion beim Laden der Seite auf
+window.onload = function () {
+    activateDotForCurrentSection();
+};
+// Fügen Sie ein Event-Listener für das Scroll-Ereignis hinzu, um die aktive Sektion zu aktualisieren
+window.addEventListener('scroll', activateDotForCurrentSection);
