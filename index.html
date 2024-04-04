@@ -21,7 +21,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap"
     rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -29,24 +31,34 @@
   <!-- navbar rechts oben -->
   <nav class="navbar navbar-expand-lg navbar-light transparent-bg fixed-top d-grid gap-2 justify-content-end">
     <div class="container-fluid">
-        <!-- Navbar Items -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <!-- Punkt Menü -->
-                <li class="nav-item dot" id="punkt-1"><a href="#section1" class="nav-link" onclick="activateDot('punkt-1')"></a></li>
-                <li class="nav-item dot" id="punkt-2"><a href="#section2" class="nav-link" onclick="activateDot('punkt-2')"></a></li>
-                <li class="nav-item dot" id="punkt-3"><a href="#section3" class="nav-link" onclick="activateDot('punkt-3')"></a></li>
-                <li class="nav-item dot" id="punkt-4"><a href="#section4" class="nav-link" onclick="activateDot('punkt-4')"></a></li>
-                <li class="nav-item dot" id="punkt-5"><a href="#section5" class="nav-link" onclick="activateDot('punkt-5')"></a></li>
-                <li class="nav-item dot" id="punkt-6"><a href="#section6" class="nav-link" onclick="activateDot('punkt-6')"></a></li>
-                <li class="nav-item dot" id="punkt-7"><a href="#section7" class="nav-link" onclick="activateDot('punkt-7')"></a></li>
-                <li class="nav-item dot" id="punkt-8"><a href="#section8" class="nav-link" onclick="activateDot('punkt-8')"></a></li>
-                <li class="nav-item dot" id="punkt-9"><a href="#section9" class="nav-link" onclick="activateDot('punkt-9')"></a></li>
-                <li class="nav-item dot" id="punkt-10"><a href="#section10" class="nav-link" onclick="activateDot('punkt-10')"></a></li>
-            </ul>
-        </div>
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Punkt Menü -->
+          <li class="nav-item dot" id="punkt-1"><a href="#section1" class="nav-link"
+              onclick="activateDot('punkt-1')"></a></li>
+          <li class="nav-item dot" id="punkt-2"><a href="#section2" class="nav-link"
+              onclick="activateDot('punkt-2')"></a></li>
+          <li class="nav-item dot" id="punkt-3"><a href="#section3" class="nav-link"
+              onclick="activateDot('punkt-3')"></a></li>
+          <li class="nav-item dot" id="punkt-4"><a href="#section4" class="nav-link"
+              onclick="activateDot('punkt-4')"></a></li>
+          <li class="nav-item dot" id="punkt-5"><a href="#section5" class="nav-link"
+              onclick="activateDot('punkt-5')"></a></li>
+          <li class="nav-item dot" id="punkt-6"><a href="#section6" class="nav-link"
+              onclick="activateDot('punkt-6')"></a></li>
+          <li class="nav-item dot" id="punkt-7"><a href="#section7" class="nav-link"
+              onclick="activateDot('punkt-7')"></a></li>
+          <li class="nav-item dot" id="punkt-8"><a href="#section8" class="nav-link"
+              onclick="activateDot('punkt-8')"></a></li>
+          <li class="nav-item dot" id="punkt-9"><a href="#section9" class="nav-link"
+              onclick="activateDot('punkt-9')"></a></li>
+          <li class="nav-item dot" id="punkt-10"><a href="#section10" class="nav-link"
+              onclick="activateDot('punkt-10')"></a></li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
 
   <!-- Warnung bei zu kleinem Bildschirm -->
   <div class="warning montserrat-regular lightgreen" id="screenWidthWarning">
@@ -57,7 +69,7 @@
       Bitte beachte, dass diese Website für eine Mindestbildschirmbreite von 1200 Pixeln optimiert ist.
     </p>
   </div>
-  
+
   <!-- Sektion 1 Willkommen -->
   <div class="container-fluid p-0" id="restContent">
     <img class="bot" src="Bilder/faq.png" alt="">
@@ -104,62 +116,86 @@
 
     <!-- Sektion 3 starke Frauen Cards-->
     <section id="section3" class="section">
-      <p class=" merriweather-sans-light lightviolet s3">Frauen haben seit den Anfängen der Informatik bedeutende
-        Beiträge
-        geleistet,
-        obwohl ihre Anerkennung oft vernachlässigt wurde.
-      </p>
+      <p class="merriweather-sans-light lightviolet s3">Frauen haben seit den Anfängen der Informatik bedeutende
+        Beiträge geleistet, obwohl ihre Anerkennung oft vernachlässigt wurde.</p>
       <div class="container custom-container text-center">
-        <div class="row row-cols-1 row-cols-md-3 g-5">
+        <div class="row row-cols-1 row-cols-md-4 g-5">
           <div class="col text-center">
             <a href="Unterseiten/Section3/liskov.html">
-            <div class="card custom-card">
-              <div class="card-body">
-                <h5 class="card-title">Barbara Liskov</h5>
+              <div class="card custom-card">
+                <div class="card-body">
+                  <h5 class="card-title">Barbara Liskov</h5>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
           </div>
           <div class="col">
-            <div class="card custom-card">
-              <div class="card-body">
-                <h5 class="card-title">Margaret Hamilton</h5>
+            <a href="Unterseiten/Section3/hamilton.html">
+              <div class="card custom-card">
+                <div class="card-body">
+                  <h5 class="card-title">Margaret Hamilton</h5>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col">
-            <div class="card custom-card">
-              <div class="card-body">
-                <h5 class="card-title">Ada Lovelace</h5>
+            <a href="Unterseiten/Section3/lovelace.html">
+              <div class="card custom-card">
+                <div class="card-body">
+                  <h5 class="card-title">Ada Lovelace</h5>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col">
-            <div class="card custom-card">
-              <div class="card-body">
-                <h5 class="card-title">Shafi Goldwasser</h5>
+            <a href="Unterseiten/Section3/goldwasser.html">
+              <div class="card custom-card">
+                <div class="card-body">
+                  <h5 class="card-title">Shafi Goldwasser</h5>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col">
-            <div class="card custom-card">
-              <div class="card-body">
-                <h5 class="card-title">Radia Perlman</h5>
+            <a href="Unterseiten/Section3/perlman.html">
+              <div class="card custom-card">
+                <div class="card-body">
+                  <h5 class="card-title">Radia Perlman</h5>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col">
             <a href="Unterseiten/Section3/hopper.html">
-            <div class="card custom-card s3" id="graceHopper">
-              <div class="card-body">
-                <h5 class="card-title">Grace Hopper</h5>
+              <div class="card custom-card s3" id="graceHopper">
+                <div class="card-body">
+                  <h5 class="card-title">Grace Hopper</h5>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
+          <div class="col">
+            <a href="Unterseiten/Section3/johnson.html">
+              <div class="card custom-card">
+                <div class="card-body">
+                  <h5 class="card-title">Katherine Johnson</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="Unterseiten/Section3/vaughan.html">
+              <div class="card custom-card">
+                <div class="card-body">
+                  <h5 class="card-title">Dorothy Vaughan</h5>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- Sektion 4 Computereinführung -->
     <section id="section4" class="section">
@@ -244,10 +280,10 @@
         kannst und dir Webseiten vorlesen lassen kannst
       </p>
       <div class="flex-container">
-        <a link href="./Unterseiten/Section7/ubersetzen.html"class="montserrat-sans-regular" id="übersetzen">
+        <a link href="./Unterseiten/Section7/ubersetzen.html" class="montserrat-sans-regular" id="übersetzen">
           Übersetzen
         </a>
-        <a link href="./Unterseiten/Section7/shortcuts.html"class="montserrat-sans-regular" id="shortcuts">
+        <a link href="./Unterseiten/Section7/shortcuts.html" class="montserrat-sans-regular" id="shortcuts">
           Shortcuts
         </a>
       </div>
@@ -256,8 +292,8 @@
     <section id="section8" class="section">
       <p class="montserrat-regular lightviolet letterHeading">Das solltest du lesen</p>
       <a href="Unterseiten/Section8/motivation.html">
-      <img class="letter" src="Bilder/Brief.png" alt="a opened letter">
-    </a>
+        <img class="letter" src="Bilder/Brief.png" alt="a opened letter">
+      </a>
     </section>
 
     <!-- Section 9 - Übersicht -->
@@ -269,22 +305,22 @@
         <br>
         Jeder Bereich ist mit Links zu vertiefenden Ressourcen versehen, damit du genau das findest, wonach du suchst.
       </p>
-      <a href="Unterseiten/Section9/html.html" class="btn btn-info custom-button" >
+      <a href="Unterseiten/Section9/html.html" class="btn btn-info custom-button">
         HTML
       </a>
-      <a href="Unterseiten/Section9/css.html" class="btn btn-info custom-button" >
+      <a href="Unterseiten/Section9/css.html" class="btn btn-info custom-button">
         CSS
       </a>
-      <a href="Unterseiten/Section9/javaScript.html" class="btn btn-info custom-button" >
+      <a href="Unterseiten/Section9/javaScript.html" class="btn btn-info custom-button">
         JavaScript
       </a>
-      <a href="Unterseiten/Section9/git.html" class="btn btn-info custom-button" >
+      <a href="Unterseiten/Section9/git.html" class="btn btn-info custom-button">
         Git
       </a>
-      <a href="Unterseiten/Section9/python.html" class="btn btn-info custom-button" >
+      <a href="Unterseiten/Section9/python.html" class="btn btn-info custom-button">
         Python
       </a>
-      <a href="Unterseiten/Section9/weitereThemen.html" class="btn btn-info custom-button" >
+      <a href="Unterseiten/Section9/weitereThemen.html" class="btn btn-info custom-button">
         weitere Themen
       </a>
     </section>
@@ -304,7 +340,10 @@
     </section>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

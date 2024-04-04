@@ -240,17 +240,10 @@ body {
     .custom-container{
         padding-top: 100px;
     }
-    .card{
-        height: 175px;
-        padding: 60px;
-        background-color: #066D5F;
-        color: #85DCBA;
-        font-family: 'Montserrat', sans-serif;
-        border-radius: 25px;
-    }
+
     .custom-card {
         height: 175px;
-        padding: 60px;
+        padding: 50px;
         background-color: #066D5F;
         color: #85DCBA;
         font-family: 'Montserrat', sans-serif;
@@ -299,11 +292,15 @@ body {
     }
 
     .custom-card2{
+        padding: 60px;
+        background-color: #066D5F;
         height: 475px;
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
         border-top-right-radius: 0; 
         border-bottom-right-radius: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
     }
     .p6 {
         padding-bottom: 5%;
