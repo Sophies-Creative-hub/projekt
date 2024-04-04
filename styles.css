@@ -243,7 +243,7 @@ body {
 
     .custom-card {
         height: 175px;
-        padding: 50px;
+        padding-top: 20%;
         background-color: #066D5F;
         color: #85DCBA;
         font-family: 'Montserrat', sans-serif;
@@ -305,6 +305,16 @@ body {
     .p6 {
         padding-bottom: 5%;
         font-size: 1.5em;
+    }
+    .custom{
+        height: 175px;
+        padding-top: 10%;
+        padding-left: 35px;
+        background-color: #066D5F;
+        color: #85DCBA;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 25px;
+        transition: transform 0.2s, box-shadow 0.2s;
     }
     .card a {
         color: inherit; 
