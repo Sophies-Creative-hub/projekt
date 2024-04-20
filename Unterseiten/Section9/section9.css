@@ -13,6 +13,7 @@
     border-top-right-radius: 0px; 
     border-bottom-right-radius: 0px;
     padding-right: 20%;
+ 
     color: #eefaf8;
     font-weight: 500;
     font-size: 18px;
@@ -26,14 +27,14 @@ h2{
     align-items: center; 
     justify-content: center; 
     text-align: center;
-    top: 100px;
+    bottom: 100px;
     right: 0px;
     width: 150px;
     height: 50px;
     font-size: 22px;
     font-weight: 500;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 #others{
     margin-top: 5%;
