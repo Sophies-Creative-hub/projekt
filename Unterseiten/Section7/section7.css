@@ -39,11 +39,10 @@ p{
     align-items: center; 
     justify-content: center; 
     text-align: center;
-    bottom: 200px;
+    bottom: 100px;
     right: 225px;
     width: 150px;
     height: 50px;
-
     font-weight: 500;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
