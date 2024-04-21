@@ -26,14 +26,7 @@ body {
     #restContent {
         display: none;
     }
-    .card {
-        backdrop-filter: blur(25px) saturate(189%);
-        -webkit-backdrop-filter: blur(25px) saturate(189%);
-        background-color: rgba(17, 25, 40, 0.72);
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.125);
-        color: #eefaf8;
-    }
+
     .sacramento-smaller {
         font-family: "Sacramento", cursive;
         font-size: 2em;
@@ -45,22 +38,26 @@ body {
         font-style: normal;
         font-size: 1.25em;
     }
-    .warning {
-        padding: 10px;
-        background: rgba(255, 255, 255, 0.05);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 50%; 
-        left: 50%; 
-    } 
+
+}
+.warning {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+} 
+
 
     /*.sacramento-regular {
         font-family: "Sacramento", cursive;
@@ -73,7 +70,7 @@ body {
 
     }*/
 
-}
+
 @media screen and (min-width: 1200px) {
     .warning {
         display: none; 
