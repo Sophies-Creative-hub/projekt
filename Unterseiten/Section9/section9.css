@@ -27,7 +27,7 @@ h2{
     align-items: center; 
     justify-content: center; 
     text-align: center;
-    bottom: 100px;
+    top: 100px;
     right: 0px;
     width: 150px;
     height: 50px;
@@ -56,5 +56,6 @@ h5{
     padding-top: 20px;
     color: rgb(104, 106, 107);
 }
-
-
+.bot{
+    top: 25px; 
+}
