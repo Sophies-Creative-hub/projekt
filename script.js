@@ -42,7 +42,3 @@ window.onload = function () {
 // Fügen Sie ein Event-Listener für das Scroll-Ereignis hinzu, um die aktive Sektion zu aktualisieren
 window.addEventListener('scroll', activateDotForCurrentSection);
 
-document.getElementById('bot').addEventListener('click', function() {
-    // Chatfenster anzeigen
-    document.getElementById('chat-window').style.display = 'block';
-  });
