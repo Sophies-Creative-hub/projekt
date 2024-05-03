@@ -28,13 +28,12 @@ h2{
     justify-content: center; 
     text-align: center;
     top: 100px;
-    right: 0px;
+    right: 20px;
     width: 150px;
     height: 50px;
     font-size: 22px;
     font-weight: 500;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border: 25px;
 }
 #others{
     margin-top: 5%;

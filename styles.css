@@ -75,6 +75,17 @@ body {
     .warning {
         display: none; 
     }
+    #chat-window {
+        position: fixed;
+        bottom: 20px; /* Abstand vom unteren Rand */
+        right: 20px; /* Abstand vom rechten Rand */
+        width: 300px;
+        height: 400px;
+        background-color: #fff; /* Hintergrundfarbe des Chatfensters */
+        border: 1px solid #ccc; /* Rand um das Chatfenster */
+        border-radius: 5px; /* Abrundung der Ecken */
+        display: none; /* Standardmäßig ausgeblendet */
+      }
 
     .sacramento-regular {
         font-family: "Sacramento", cursive;
