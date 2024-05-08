@@ -13,6 +13,10 @@ h2{
     height: 500px;
     width: 500px;
 }
+
+#s3:hover{
+        box-shadow:rgb(87, 227, 255) 4px 4px 66px;
+}
 .card-body{
     display: flex;
     justify-content: center;
