@@ -7,6 +7,7 @@ body {
     margin: 0;
     color: #eefaf8;
     overflow: scroll;
+    scroll-behavior: smooth;
     height: 100vh;
     scroll-snap-type: y mandatory;
     font-family: monts;
@@ -16,8 +17,11 @@ body {
         radial-gradient(at 82% 65%, rgba(22,120,149,1) , transparent 55%);  */
     background: rgb(12,39,47);
     background: radial-gradient(circle, rgba(12,39,47,1) 0%, rgba(22,120,149,1) 0%, rgb(108, 216, 175) 100%);  
-     
+}
 
+#footer a{
+    color: #eefaf8;
+    text-decoration: none;
 }
 @media screen and (max-width: 1200px) {
     body{
@@ -75,8 +79,6 @@ body {
     .warning {
         display: none; 
     }
-    
-
     .sacramento-regular {
         font-family: "Sacramento", cursive;
         font-size: 3.2em;
@@ -99,6 +101,7 @@ body {
         scroll-snap-align: start;
         scroll-behavior: smooth;
         font-size: 20px;
+        position: relative; 
     }
     
     /* navbar.css */
@@ -432,15 +435,24 @@ body {
     a{
         color: #eefaf8 ;
         text-decoration: none;
-     }
-    .bot {
-        position: absolute;
-        bottom: 25px; 
-        right: 25px; 
-        width: 50px; 
-        height: 50px;
-        background-size: cover; 
     }
+    
+    #footer {
+        position: absolute;
+        left:0;
+        bottom: 0;
+        width: 100%;
+        color: #eefaf8;
+    }
+    
+    #footer a {
+        color: #eefaf8;
+        text-decoration: none;
+    }
+    
+    
+     
+    
 }
 
 
