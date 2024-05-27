@@ -28,10 +28,7 @@ body {
     background: radial-gradient(circle, rgba(12,39,47,1) 0%, rgba(22,120,149,1) 0%, rgb(108, 216, 175) 100%);  
 }
 
-#footer a{
-    color: #eefaf8;
-    text-decoration: none;
-}
+
 @media screen and (max-width: 1200px) {
     body{
         overflow: hidden;
@@ -457,8 +454,6 @@ body {
         text-decoration: none;
     }
     
-    
-     
     
 }
 
