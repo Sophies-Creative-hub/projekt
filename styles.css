@@ -293,6 +293,10 @@ body {
         color: #eefaf8;
     }
 
+    h1 {
+        font-size: 1.1em;
+    }
+
     .custom-card:hover {
         transform: translateY(-5px);
         box-shadow: rgb(87, 227, 255) 4px 4px 66px;
