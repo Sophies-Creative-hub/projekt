@@ -1,18 +1,20 @@
-
-#section7{
+#section7 {
     font-size: 22px;
     padding-top: 4%;
-    
+
 }
-.custom-card{
+
+.custom-card {
     padding: 55px;
 }
-.custom-card2{
+
+.custom-card2 {
     padding: 1%;
     border-radius: 25px;
     font-size: 22px;
-} 
-.custom-card3{
+}
+
+.custom-card3 {
     padding: 1%;
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -22,35 +24,33 @@
     height: 475px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px; 
+    border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     font-family: 'Montserrat', sans-serif;
- 
+
     color: #eefaf8;
 }
-p{
+
+p {
     padding-top: 1%;
 }
 
 .custom-button {
     position: absolute;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    bottom: 100px;
-    right: 225px;
-    width: 150px;
-    height: 50px;
+    bottom: 3%;
+    left: 3%;
+    width: 11%;
+    height: 7%;
     font-weight: 500;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-} 
- #zurueckButton{
-    left: 0px;
-    bottom: 30px;  
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-} 
+    border-radius: 10px;
+}
+
+#zurueckButton {
+    position: absolute;
+    left: 85%;
+    border-radius: 10px;
+}
