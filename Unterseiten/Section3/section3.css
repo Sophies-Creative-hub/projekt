@@ -1,29 +1,31 @@
-section{
+section {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
-h2{
-    font-size: 26px;
-}
-#s3{
-    border-radius: 25px;
-    height: 500px;
-    width: 500px;
+h2 {
+    font-size: 1.2em;
 }
 
-#s3:hover{
-        box-shadow:rgb(87, 227, 255) 4px 4px 66px;
+#s3 {
+    border-radius: 25px;
+    height: 70%;
+    width: 35%;
 }
-.card-body{
+
+#s3:hover {
+    box-shadow: rgb(87, 227, 255) 4px 4px 66px;
+}
+
+.card-body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
 }
-p{
-    font-size: 21px;
+
+p {
+    font-size: 1.05em;
 }

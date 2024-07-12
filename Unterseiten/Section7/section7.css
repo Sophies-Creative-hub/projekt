@@ -5,13 +5,7 @@
 }
 
 .custom-card {
-    padding: 55px;
-}
-
-.custom-card2 {
-    padding: 1%;
-    border-radius: 25px;
-    font-size: 22px;
+    padding: 8%;
 }
 
 .custom-card3 {
@@ -21,11 +15,8 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    height: 475px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    height: 99%;
+    border-radius: 25px;
     font-family: 'Montserrat', sans-serif;
 
     color: #eefaf8;

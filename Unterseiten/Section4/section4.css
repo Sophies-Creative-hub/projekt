@@ -4,13 +4,17 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    bottom: 70%;
-    right: 5%;
+    bottom: 5%;
+    left: 5%;
     width: 11%;
     height: 7%;
-    font-size: 22px;
+    font-size: 1.1em;
     font-weight: 500;
     border: 25px;
+}
+
+.custom-card {
+    padding-top: 15%;
 }
 
 .container {

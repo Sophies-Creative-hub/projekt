@@ -1,26 +1,23 @@
 #description {
-    padding-top: 3%;
+    padding-top: 2%;
     padding-left: 5%;
-    font-size: 20px;
+    font-size: 1em;
     padding-right: 30%;
 }
 
 #s9 {
     padding: 1%;
     padding-left: 10%;
-    height: 550px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    height: 100%;
+    border-radius: 0px;
     padding-right: 20%;
     color: #eefaf8;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 0.88em;
 }
 
 h2 {
-    padding: 5px;
+    padding: 2%;
 }
 
 .custom-button {
@@ -29,27 +26,24 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    top: 100px;
-    right: 20px;
-    width: 150px;
-    height: 50px;
-    font-size: 22px;
+    top: 10%;
+    right: 3%;
     font-weight: 500;
     border: 25px;
+    width: 11%;
+    height: 7%;
+    border-radius: 10px;
 }
 
 #others {
     margin-top: 5%;
     padding: 2%;
-    height: 550px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    height: 90%;
+    border-radius: 0px;
     padding-right: 2%;
     color: #eefaf8;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 0.9em;
 }
 
 b {
@@ -57,10 +51,6 @@ b {
 }
 
 h5 {
-    padding-top: 20px;
+    padding-top: 2%;
     color: rgb(104, 106, 107);
-}
-
-.bot {
-    top: 25px;
 }
