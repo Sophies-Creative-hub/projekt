@@ -13,13 +13,13 @@
     font-style: normal;
 }
 
+
 body {
     margin: 0;
+    overflow: hidden;
     color: #eefaf8;
     overflow: scroll;
     scroll-behavior: smooth;
-    height: 100vh;
-    scroll-snap-type: y mandatory;
     height: 100vh;
     scroll-snap-type: y mandatory;
     font-family: montserrat;
