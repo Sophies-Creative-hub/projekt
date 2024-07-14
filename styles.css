@@ -416,6 +416,12 @@ body {
         box-shadow: rgb(87, 227, 255) 4px 4px 66px;
     }
 
+    #Cs3 {
+        height: 100%;
+        margin-top: 0;
+        padding: 1%;
+    }
+
     #section8 {
         text-align: center;
     }
