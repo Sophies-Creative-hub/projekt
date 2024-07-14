@@ -13,20 +13,13 @@
     font-style: normal;
 }
 
-
-/* Webkit-basierte Browser (z.B. Chrome, Safari) */
-body::-webkit-scrollbar {
-    display: none; /* Versteckt die Scrollleiste */
-}
-
-
 body {
     overflow-x: hidden;
     scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; 
+    -ms-overflow-style: none; /* Internet Explorer, Edge */
     margin: 0;
     color: #eefaf8;
-    overflow: scroll;
+    overflow-y: auto; /* Erlaubt vertikales Scrollen, wenn nötig */
     scroll-behavior: smooth;
     height: 100vh;
     scroll-snap-type: y mandatory;
@@ -34,6 +27,12 @@ body {
     background: rgb(12, 39, 47);
     background: radial-gradient(circle, rgba(12, 39, 47, 1) 0%, rgba(22, 120, 149, 1) 0%, rgb(108, 216, 175) 100%);
 }
+
+/* Versteckt die Scrollleiste in Webkit-basierten Browsern (z.B. Chrome, Safari) */
+body::-webkit-scrollbar {
+    display: none; /* Versteckt die Scrollleiste */
+}
+
 
 
 @media screen and (max-width: 1200px) {
