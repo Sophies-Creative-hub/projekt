@@ -2,8 +2,6 @@ body,
 html {
     padding: 2%;
     height: 95%;
-    overflow: hidden;
-
 }
 
 .custom-button {
