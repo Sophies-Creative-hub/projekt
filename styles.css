@@ -13,11 +13,17 @@
     font-style: normal;
 }
 
-html {
-    overflow: hidden;
+
+/* Webkit-basierte Browser (z.B. Chrome, Safari) */
+body::-webkit-scrollbar {
+    display: none; /* Versteckt die Scrollleiste */
 }
 
+
 body {
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; 
     margin: 0;
     color: #eefaf8;
     overflow: scroll;
